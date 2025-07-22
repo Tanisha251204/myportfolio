@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+/*.sidebar
+{
+    background-color:rgb(161, 146, 146);
+    width:200px;
+    font-family: "Oswald", sans-serif;
+    height:100vh;
+    position:fixed;
+}*/
+.sidebar nav{
+    padding:45px
+}
+
+.sidebar nav li{
+    list-style:none;
+    font-size:30px;
+    padding:33px;
+}
+.sidebar nav li a 
+{
+    text-decoration:none;
+    color:white;
+}
+
+
+.main
+{
+    /*background-color:yellow;*/
+   width:85vw;
+   margin-left:250px;
+
+
+
+}
+.container {
+    display: flex;
+}
+
+
+.infocontainer {
+/*background-color: pink;*/
+/*height:58px;*/
+width:80vw;
+margin:144px auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.devinfo
+{   font-size:16px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.hello{
+    font-size:3em;
+    font-family: "Roboto Slab", serif;
+}
+.name
+{
+    font-size:50px;
+    font-weight:bold;
+    font-family: "Roboto Slab", serif;
+}
+.about
+{
+    font-size:40px;
+    font-family: "Roboto Slab", serif;
+}
+.moreabout{
+    margin-top:23px;
+    font-size:22px;
+    font-family: "Roboto Slab", serif;
+}
+
+
+.devpic img {
+    height: 600px;
+    margin-right: 125px;
+    position: relative;
+    top: -200px; /* Moves image upwards */
+}
+
+.buttons
+{
+    margin-top:34px;
+}
+.btn{
+    margin-right: 10px;
+    padding: 9px 14px;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius:22px;
+    color:white;
+    background-color:rgb(88, 161, 162);
+    font-weight:bold;
+    margin:0 3 px;
+    
+}
+.btn-small
+{
+ font-size:10px;
+ padding:7px 13px;
+ margin:10px 0;
+}
+.btn:hover{
+    background-color:white;
+    color:rgb(88, 161, 162);
+
+}
+.contactform{
+    padding-top: 0 144px;
+    padding:144px;
+    font-family: "Oswald", sans-serif;
+}
+.contactform h1{
+     font-family: "Roboto Slab", serif;
+     padding:12px 0;
+
+}
+.contactform form div{
+    padding:10px 0;
+    display:flex;
+    flex-direction:column;
+}
+.contactform form div input{
+    width:26vw;
+    border-radius:5px;
+    margin:6px 0 0;
+    padding:3px;
+}
+.contactform form{
+    margin:0 40px;
+}
+
+
+#emailHelp
+{
+ font-size:11px;
+ color:midnightblue;
+ margin:0 5px;
+ padding: 3px 0 0 0;
+}
+
+#form-check 
+{
+flex-direction:row;
+}
+#form-check input{
+    width:24px;
+    margin: 3px 0;
+}
+.blogitem {
+    margin:20px;
+font-family: "Oswald", sans-serif;
+}
+h1{
+font-family: "Oswald", sans-serif;
+margin:23px;
+}
+p{
+     font-family: "Roboto Slab", serif;
+
+}
+intro {
+    max-width: 900px;   
+    margin: 0 auto;     
+    padding: 20px;      
+}
+.intro h2{
+font-family: "Oswald", sans-serif;
+margin:12 px 12px;
+}
+.intro p{
+font-family: "Roboto Slab", serif;
+margin:12px 12px;
+}
+/* General heading styling */
+.intro h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 12px 0;
+
+}
+
+/* Sub-headings under My Skills */
+.skill h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px 0 4px 0;
+    margin-bottom:8px;
+}
+
+/* Details under each skill subheading */
+.skill p {
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    margin-bottom:12px;
+}
+.intro h2{
+    font-size:28px;
+    margin-top:20px;
+}
+
+.hamburger
+{
+    position:absolute;
+    cursor:pointer;
+    top:10px;
+    left:10px;
+}
+.cross
+{
+    margin-left:155px;
+}
+.sidebargo
+{
+    transform:translate(-443px,0px);
+    position:absolute;
+}
+
+
+.sidebar {
+    background-color: rgb(161, 146, 146);
+    width: 200px;
+    font-family: "Oswald", sans-serif;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebargo {
+    transform: translate(-250px, 0); /* Adjusted to match sidebar width */
+}
+@media screen and (max-width: 768px) {
+    .sidebar {
+        transform: translate(-250px, 0);
+    }
+}
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Medium devices (tablets, 992px and down) 
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem 0;
+    }
+
+    .sidebar nav {
+        padding: 1rem;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar nav li {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .infocontainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .devpic {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .devpic img {
+        max-height: 350px;
+    }
+}
+
+/* Small devices (landscape phones, 768px and down) 
+@media screen and (max-width: 768px) {
+    .hello {
+        font-size: 2.5rem;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .about {
+        font-size: 1.5rem;
+    }
+
+    .contactform {
+        padding: 2rem 1rem;
+    }
+
+    .contactform form div input,
+    .contactform form div textarea {
+        max-width: 100%;
+    }
+}
+
+/* Extra small devices (portrait phones, 480px and down) 
+@media screen and (max-width: 480px) {
+    .sidebar nav li {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .hello {
+        font-size: 2rem;
+    }
+
+    .devpic img {
+        max-height: 250px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .blogitem {
+        margin: 1rem 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .sidebar-icon {
+        display: none;
+    }
+
+    .sidebar nav a {
+        font-size: 1.2rem; /* Increase font size for better readability 
+        display: block;
+        padding: 10px 0;
+    }
+    .sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar nav a {
+        justify-content: center; /* center text if images are hidden 
+    }
+}
+
+}
+@media(max-width:529px)
+{
+
+    .devpic{
+        display:none;
+    }
+    .intro,.blogcontainer,.contactform{
+        margin:50px 8px;
+    }
+}*/
+
+.education {
+    padding: 20px;
+}
+
+.education-item {
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.education-item h2 {
+    margin-bottom: 5px;
+    font-family: "Oswald", sans-serif;
+}
+
+.education-item p {
+    margin: 3px 0;
+    font-family: "Roboto Slab", serif;
+} 
+
+
+
+/* Default sidebar hidden when sidebargo is applied */
+.sidebargo {
+    transform: translate(-250px, 0);
+}
+
+/* Show sidebar on small screens regardless of sidebargo */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        transform: translate(0, 0) !important;  /* Force show */
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem 0;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar nav li {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .infocontainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .devpic {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+    .devpic img {
+        max-height: 200px;
+    }
+
+    .hello {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        font-size: 1.2rem;
+    }
+
+    .contactform,
+    .intro,
+    .blogcontainer {
+        margin: 50px 8px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    /* Ensure all text fits */
+    p, .moreabout {
+        font-size: 14px;
+    }
+}
+
+/* Extra Small devices - hide image */
+@media (max-width: 529px) {
+    .devpic {
+        display: none;
+    }
+}
